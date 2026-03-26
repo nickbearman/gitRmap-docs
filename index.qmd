@@ -1,0 +1,94 @@
+---
+title: "gitRmap Tutorial"
+format: 
+  html:
+    toc: true
+---
+
+## Have a GitHub account
+
+To setup your own gitRmap, you need a GitHub account. Make sure you are signed into your GitHub account before starting. 
+
+## Fork
+
+  - Go to [https://github.com/nickbearman/gitRmap/](https://github.com/nickbearman/gitRmap/)
+  - Click ![Fork](images/fork.png) at the top of the page. 
+  - Give your map a name, or stick with the default `gitRmap`
+  ![](images/create-fork-name.png)
+  - Click ![Create Fork](images/create-fork.png)
+
+## Setup GitHub Pages
+  - Click **Settings > Pages**
+  - Source should be set to **Deploy from Branch**
+  - Set Branch to `main`
+  - Set the folder to `/docs`
+  - It should look like this:
+  ![](images/github-pages.png)
+  - Click **Save**.
+
+## Setup GitHub Actions  
+  
+  - Go to **Actions**
+  - Click **I understand my workflows, go ahead and enable them.**
+  ![](images/workflows.png)
+
+## Update `data/locations.csv`
+  - Edit the `locations.csv` in the `data` folder to trigger the GitHub actions and run the R code to generate the map. 
+  
+  - Just to test everything is working, click **Edit**, and delete one of the rows. 
+  
+  ![](images/edit-locations.png)
+  
+  - Commit the changes as normal
+  ![](images/commit-changes.png)
+- *More details on the options here*
+
+## GitHub Action Running
+
+- Go back to your repo home page. A brown dot next to the commit means the GitHub Actions is running:
+
+![](images/running.png)
+
+- You can just let it run now. It shouldn't take more than a minute to complete. 
+
+- When it is finished, it will come up with a green tick:
+![](images/complete.png)
+- If you want to, you can get more details. Click on the brown dot and it will take you to the Actions tab.
+
+![](images/running-detailed.png)
+
+- You can click on each job and it will tell you the details. 
+
+- When it is complete, go to **https://(username).github.io/gitRmap/** to see your map.
+
+- If you can't find the link, click **Settings** > **Pages**. It will show you the address and you can click to **Visit Site**. 
+
+![](images/view-site.png)
+
+## What do I do now?
+
+Once you have the example map up and running, you have two things to do:
+
+- Update the `locations.csv` file to show the points on the map you want. Remember you only need to fill out `city`, `state` and `country`. Just leave `lat` and `long` blank and R will automatically fill out the coordinates. 
+
+- Remove all the extra bits from `index.html` so it just shows the map, or whatever you want. Also remember to update the page title! See the comments in `index.html` for more help. 
+
+## What about popups?
+
+*to follow*
+
+## Help! I got an error
+
+- If you get a red cross, it means something went wrong:
+![](images/error.png)
+- Do not worry! It is probably an easy fix. 
+
+- Click on the name and it will take you to the **Actions** page:
+
+![](images/error-build.png)
+
+- Click on **build** and it will show you where the error was:
+
+![](images/error-create-map-data.png)
+
+In this case there was a problem with the R code. I had to tweak the code and all was fine. Try working out the problem yourself. If you think it is a problem, please submit an [Issue](https://github.com/nickbearman/gitRmap-docs/issues/new) and I will have a look. 
