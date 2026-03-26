@@ -92,3 +92,19 @@ Once you have the example map up and running, you have two things to do:
 ![](images/error-create-map-data.png)
 
 In this case there was a problem with the R code. I had to tweak the code and all was fine. Try working out the problem yourself. If you think it is a problem, please submit an [Issue](https://github.com/nickbearman/gitRmap-docs/issues/new) and I will have a look. 
+
+If you do get an error, and manage to solve it, you can edit `locations.csv` to re run the build, or you can go to **Actions** and click **Re-run jobs > Re-run all jobs**:
+
+![](images/re-run-all-jobs.png)
+
+## What about updates?
+
+If I update the gitRmap repo, then you will get a message at the top of your repo saying *This branch is 1 commit ahead of `nickbearman/gitRmap:main`*. This means I have changed the code, but your fork doesn't have that update. 
+
+![](images/sync-fork.png)
+
+To get the update, click **Sync Fork** and choose **Update branch**:
+
+![](images/update-branch.png)
+
+The new code will then be coppied to your repo. 

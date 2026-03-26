@@ -55,6 +55,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#what-do-i-do-now" id="toc-what-do-i-do-now" class="nav-link" data-scroll-target="#what-do-i-do-now">What do I do now?</a></li>
   <li><a href="#what-about-popups" id="toc-what-about-popups" class="nav-link" data-scroll-target="#what-about-popups">What about popups?</a></li>
   <li><a href="#help-i-got-an-error" id="toc-help-i-got-an-error" class="nav-link" data-scroll-target="#help-i-got-an-error">Help! I got an error</a></li>
+  <li><a href="#what-about-updates" id="toc-what-about-updates" class="nav-link" data-scroll-target="#what-about-updates">What about updates?</a></li>
   </ul>
 </nav>
 </div>
@@ -166,6 +167,16 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><img src="images/error-create-map-data.png" class="img-fluid"></p>
 <p>In this case there was a problem with the R code. I had to tweak the code and all was fine. Try working out the problem yourself. If you think it is a problem, please submit an <a href="https://github.com/nickbearman/gitRmap-docs/issues/new">Issue</a> and I will have a look.</p>
+<p>If you do get an error, and manage to solve it, you can edit <code>locations.csv</code> to re run the build, or you can go to <strong>Actions</strong> and click <strong>Re-run jobs &gt; Re-run all jobs</strong>:</p>
+<p><img src="images/re-run-all-jobs.png" class="img-fluid"></p>
+</section>
+<section id="what-about-updates" class="level2">
+<h2 class="anchored" data-anchor-id="what-about-updates">What about updates?</h2>
+<p>If I update the gitRmap repo, then you will get a message at the top of your repo saying <em>This branch is 1 commit ahead of <code>nickbearman/gitRmap:main</code></em>. This means I have changed the code, but your fork doesn’t have that update.</p>
+<p><img src="images/sync-fork.png" class="img-fluid"></p>
+<p>To get the update, click <strong>Sync Fork</strong> and choose <strong>Update branch</strong>:</p>
+<p><img src="images/update-branch.png" class="img-fluid"></p>
+<p>The new code will then be coppied to your repo.</p>
 </section>
 
 </main>
