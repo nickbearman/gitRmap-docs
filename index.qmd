@@ -5,6 +5,8 @@ format:
     toc: true
 ---
 
+*A [YouTube video](https://youtu.be/-N1I1okulN4) of this process is available*. 
+
 ## Have a GitHub account
 
 To setup your own gitRmap, you need a GitHub account. Make sure you are signed into your GitHub account before starting. 
@@ -107,4 +109,4 @@ To get the update, click **Sync Fork** and choose **Update branch**:
 
 ![](images/update-branch.png)
 
-The new code will then be coppied to your repo. 
+The new code will then be copied to your repo. 
