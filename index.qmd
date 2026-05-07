@@ -43,7 +43,7 @@ To setup your own gitRmap, you need a GitHub account. Make sure you are signed i
   
   - Commit the changes as normal
   ![](images/commit-changes.png)
-- *More details on the options here*
+- *More details on the [options here](options.html).*
 
 ## GitHub Action Running
 
