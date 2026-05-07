@@ -1,5 +1,5 @@
 ---
-title: "gitRmap Tutorial"
+title: "gitRmap: Tutorial"
 format: 
   html:
     toc: true
