@@ -103,7 +103,7 @@ If you do get an error, and manage to solve it, you can edit `locations.csv` to 
 
 If I update the gitRmap repo, then you will get a message at the top of your repo saying *This branch is 1 commit ahead of `nickbearman/gitRmap:main`*. This means I have changed the code, but your fork doesn't have that update. 
 
-![](images/sync-fork.png)
+![If you see a screen like this, there is an update for gitRmap. This has one, there may be more!](images/sync-fork.png)
 
 To get the update, click **Sync Fork** and choose **Update branch**:
 
